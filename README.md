@@ -1,7 +1,18 @@
-Typescript Karma Webpack Jasmine Demo
-=====================================
+Typescript Karma Webpack Jasmine Request "cors" Demo
+====================================================
 
-如何把Karma, webpack, jasmine连接起来，处理typescript测试
+Jasmine的测试通常是在浏览器中执行，如何解决跨域问题？关键点在于karma.config.js中：
+
+```
+browsers: ['Chrome_without_security'],
+
+customLaunchers:{
+    Chrome_without_security:{
+        base: 'Chrome',
+        flags: ['--disable-web-security']
+    }
+},
+```
 
 ```
 npm install

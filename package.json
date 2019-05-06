@@ -3,9 +3,12 @@
     "test": "karma start karma.conf.js"
   },
   "dependencies": {
+    "axios": "0.18.0",
+    "got": "8.3.2",
     "lodash": "4.17.10"
   },
   "devDependencies": {
+    "@types/got": "9.4.4",
     "@types/jasmine": "2.8.8",
     "jasmine": "3.2.0",
     "karma": "3.0.0",
